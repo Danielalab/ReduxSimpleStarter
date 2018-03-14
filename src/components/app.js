@@ -1,7 +1,12 @@
 import React from 'react';
+import Header from './Header';
+import SectionMe from './SectionMe';
 
 const App = () => (
-  <div>React and redux are cool</div>
+  <div>
+    <Header/>
+    <SectionMe/>
+  </div>
 )
 
 export default App
