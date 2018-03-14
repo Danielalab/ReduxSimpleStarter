@@ -1,18 +1,17 @@
 import React from 'react';
 import Hobbies from './Hobbies';
 
-const hobbies = ['leer', 'codear', 'dormir', 'ir al cine'].map( (hobbie, index) => {
-  return <Hobbies hobbie={hobbie}/>
-});
-
-const SectionMe = ({parrafo, img}) => {
+const SectionMe = ({parrafo, img, hobbies}) => {
+  const listhobbies = hobbies.map( (hobbie, index) => {
+    return <Hobbies hobbie={hobbie} key={index}/>
+  });
    return (<section>
     {parrafo}
    <br/>
    <img src={img}/>
    <h4>Hobbies</h4>
    <ul>
-    {hobbies}
+    {listhobbies}
    </ul>
   </section>)
 }
