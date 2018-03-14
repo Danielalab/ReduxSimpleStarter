@@ -17,4 +17,14 @@ const SectionMe = ({parrafo, img, hobbies}) => {
   </section>)
 }
 
+SectionMe.propTypes = {
+  parrafo: PropTypes.string.isRequired,
+  img: PropTypes.string,
+  hobbies: PropTypes.array.isRequired,
+}
+
+Article.defaultProps = {
+  img: 'image not found',
+};
+
 export default SectionMe
