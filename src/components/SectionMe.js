@@ -1,8 +1,8 @@
 import React from 'react';
 import Hobbies from './Hobbies';
 
-const hobbies = ['leer', 'codear', 'dormir', 'ir al cine'].map( hobbie => {
-  <Hobbies hobbie={hobbie}/>
+const hobbies = ['leer', 'codear', 'dormir', 'ir al cine'].map( (hobbie,index) => {
+  return <Hobbies hobbie={hobbie} key={index}/>
 });
 
 const SectionMe = () => (
